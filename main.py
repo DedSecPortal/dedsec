@@ -39,14 +39,6 @@ class DetailInfoDialog(wx.Dialog):
         lat_lon_label = wx.StaticText(self, label=f"Широта и долгота: {ip_data.get('loc', 'N/A')}")
         sizer.Add(lat_lon_label, 0, wx.ALL, 10)
 
-        gmaps_label = wx.StaticText(self, label="Google Maps:")
-        sizer.Add(gmaps_label, 0, wx.ALL, 10)
-
-        gmaps_link = wx.TextCtrl(self, value="Нажмите здесь для открытия Google Maps", style=wx.TE_READONLY | wx.TE_AUTO_URL)
-        gmaps_link.SetBackgroundColour(self.GetBackgroundColour())
-        gmaps_link.Bind(wx.EVT_TEXT_URL, self.on_open_gmaps)
-        sizer.Add(gmaps_link, 0, wx.ALL, 10)
-
         self.SetSizerAndFit(sizer)
 
     def on_open_gmaps(self, event):
