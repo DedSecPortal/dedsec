@@ -53,7 +53,7 @@ class IPCheckerFrame(wx.Frame):
         self.SetMaxSize((800, 600))
 
         panel = wx.Panel(self)
-        panel.SetBackgroundColour(wx.Colour(128, 0, 128))  # Чёрный фон
+        panel.SetBackgroundColour(wx.Colour(139, 0, 0))  # Чёрный фон
 
         sizer = wx.BoxSizer(wx.VERTICAL)
 
@@ -74,7 +74,7 @@ class IPCheckerFrame(wx.Frame):
         ip_input = wx.TextCtrl(panel)
         sizer.Add(ip_input, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.TOP, 20)
 
-        check_ip_button = wx.Button(panel, label="Проверить IP")
+        check_ip_button = wx.Button(panel, label="поиск по IP")
         check_ip_button.Bind(wx.EVT_BUTTON, lambda event: self.on_check_ip_button(event, ip_input))
         sizer.Add(check_ip_button, 0, wx.ALIGN_CENTER_HORIZONTAL | wx.TOP, 20)
 
