@@ -1,6 +1,6 @@
 Загрузка -
 
-git clone https://github.com/WakasaTag/dedsec
+git clone https://github.com/DedSecPortal/dedsec
 cd dedsec
 
 Запуск -
@@ -8,7 +8,7 @@ python main.py
 
 Install -
 
-git clone https://github.com/WakasaTag/dedsec
+git clone https://github.com/DedSecPortal/dedsec
 cd dedsec
 
 launch -
