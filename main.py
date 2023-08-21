@@ -121,7 +121,7 @@ class IPCheckerFrame(wx.Frame):
         try:
             response = requests.get("https://ipinfo.io/json")
             ip_data = response.json()
-            dialog = DetailInfoDialog(ip_data, None, title="Информация об IP")
+            dialog = DetailInfoDialog(ip_data, None, title="результаты пробива IP")
             dialog.ShowModal()
             dialog.Destroy()
         except requests.exceptions.RequestException:
